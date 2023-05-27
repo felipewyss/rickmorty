@@ -14,8 +14,8 @@ function App({ removeFavorites }) {
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
 
-  const username = "pepe@gmail.com",
-    password = "1password";
+  const username = "felipeewyss@gmail.com",
+    password = "guille";
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -37,6 +37,7 @@ function App({ removeFavorites }) {
     !access && navigate("/login");
   }, [access]);
 
+//change
   function onSearch(character) {
     const chars = [...characters];
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
